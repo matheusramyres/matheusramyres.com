@@ -9,7 +9,7 @@ export default function AboutSection() {
   return (
     <section
       className={clsx(
-        'pt-16 px-5 md:px-16 -mx-5 md:-mx-16',
+        'pt-16 pb-16 px-5 md:px-16 -mx-5 md:-mx-16',
         'min-h-screen bg-secondary-bg',
         'flex flex-col items-center',
       )}
