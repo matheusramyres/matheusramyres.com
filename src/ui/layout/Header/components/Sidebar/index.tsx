@@ -1,5 +1,5 @@
 import { headerContent } from '@/domains/layout/header.content';
-import { IconButtom } from '@/ui/components/IconButton';
+import { IconButton } from '@/ui/components/IconButton';
 import clsx from 'clsx';
 
 interface SideBarProps {
@@ -25,7 +25,7 @@ export default function SideBar({ setIsOpened, isOpened }: SideBarProps) {
           'flex items-center justify-end',
         )}
       >
-        <IconButtom
+        <IconButton
           icon="X"
           onClick={() => {
             setIsOpened(!isOpened);

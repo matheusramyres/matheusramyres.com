@@ -4,19 +4,19 @@ import { MouseEventHandler } from 'react';
 
 export type IconName = keyof typeof Icon;
 
-interface IconButtomProps {
+interface IconButtonProps {
   icon: IconName;
   size?: number;
   onClick: MouseEventHandler<HTMLButtonElement> | undefined;
   className?: string;
 }
 
-export function IconButtom({
+export function IconButton({
   icon,
   size,
   onClick,
   className,
-}: IconButtomProps) {
+}: IconButtonProps) {
   const IconComponent = Icon[icon];
   return (
     <button

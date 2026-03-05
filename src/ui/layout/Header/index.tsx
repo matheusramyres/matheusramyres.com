@@ -1,6 +1,6 @@
 'use client';
 import { headerContent } from '@/domains/layout/header.content';
-import { IconButtom } from '@/ui/components/IconButton';
+import { IconButton } from '@/ui/components/IconButton';
 import { clsx } from 'clsx';
 import Image from 'next/image';
 import { useState } from 'react';
@@ -28,7 +28,7 @@ export default function Header() {
             className={clsx(
               'hidden',
               'md:flex gap-5.5',
-              'text-slate-600 font-semibold',
+              'text-gray-600 font-semibold',
             )}
           >
             {headerContent.links.map((link) => (
@@ -44,7 +44,7 @@ export default function Header() {
             ))}
           </ul>
           <div className="block md:hidden">
-            <IconButtom
+            <IconButton
               icon="Menu"
               onClick={() => {
                 setIsOpened(!isOpened);
