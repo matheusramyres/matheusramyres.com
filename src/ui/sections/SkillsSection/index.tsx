@@ -1,6 +1,6 @@
 import { skillContent } from '@/domains/skill/skill.content';
+import { SkillCard } from '@/ui/components/Cards';
 import { HeaderSection } from '@/ui/components/HeaderSection';
-import { SkillCard } from '@/ui/components/SkillCard';
 import clsx from 'clsx';
 
 export default function SkillsSection() {

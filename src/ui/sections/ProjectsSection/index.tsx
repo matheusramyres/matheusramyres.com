@@ -1,11 +1,9 @@
-import { aboutContent } from '@/domains/about/about.content';
+import { skillContent } from '@/domains/project/project.content';
 import { AboutCard } from '@/ui/components/Cards';
 import { HeaderSection } from '@/ui/components/HeaderSection';
-import { RichContent } from '@/ui/components/RichContent';
-import { ViewMoreContainer } from '@/ui/components/ViewMoreContainer';
 import clsx from 'clsx';
 
-export default function AboutSection() {
+export default function ProjectsSection() {
   return (
     <section
       className={clsx(
@@ -15,23 +13,17 @@ export default function AboutSection() {
       )}
     >
       <HeaderSection
-        title={aboutContent.title}
-        subText={aboutContent.description}
+        title={skillContent.title}
+        subText={skillContent.description}
       />
       <div className="mt-16 flex gap-2 md:gap-8 flex-col-reverse 2xl:flex-row items-baseline">
-        <ViewMoreContainer
-          className={clsx('mt-16 2xl:mt-0 2xl:max-w-1/2 w-full text-justify')}
-        >
-          <RichContent html={aboutContent.longText} />
-        </ViewMoreContainer>
-
         <div className="2xl:max-w-1/2 w-full flex gap-5 items-center justify-center flex-wrap">
-          {aboutContent.descriptionCards.map((card) => (
+          {skillContent.projectCards.map((card) => (
             <AboutCard
               key={card.icon}
               icon={card.icon}
               title={card.title}
-              subText={card.subText}
+              subText={card.title}
             />
           ))}
         </div>
