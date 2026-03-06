@@ -19,7 +19,7 @@ export function ViewMoreContainer({
   };
 
   return (
-    <div className={className}>
+    <div className={clsx(className, 'relative')}>
       <div
         className={clsx(
           'overflow-hidden transition-all duration-700 ease-in-out',
@@ -31,7 +31,7 @@ export function ViewMoreContainer({
       <button
         onClick={handleSeeMore}
         className={clsx(
-          'text-blue-800 font-semibold',
+          'text-blue-800 font-semibold mt-8',
           'hover:text-blue-600 cursor-pointer',
           'flex items-center gap-1',
         )}
