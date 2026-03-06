@@ -7,7 +7,10 @@ import clsx from 'clsx';
 import Image from 'next/image';
 export default function ProfileSection() {
   return (
-    <section className="min-h-screen bg-white flex flex-col items-center justify-evenly">
+    <section
+      id="home"
+      className="min-h-screen bg-white flex flex-col items-center justify-evenly scroll-mt-26.75"
+    >
       <div className="flex flex-col items-center gap-2 md:gap-8 ">
         <div className="min-w-20 min-h-20 md:min-w-30 md:min-h-30 relative">
           <Image
@@ -45,7 +48,7 @@ export default function ProfileSection() {
         <IconLink icon="Mail" size={24} href="#" />
       </div>
       <div className="flex pt-6 animate-bounce">
-        <IconLink icon="ArrowDown" size={24} href="#" />
+        <IconLink icon="ArrowDown" size={24} href="#about" />
       </div>
     </section>
   );

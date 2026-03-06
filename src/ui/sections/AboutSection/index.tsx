@@ -8,9 +8,10 @@ import clsx from 'clsx';
 export default function AboutSection() {
   return (
     <section
+      id="about"
       className={clsx(
         'pt-16 pb-16 px-5 md:px-16 -mx-5 md:-mx-16',
-        'min-h-screen bg-secondary-bg',
+        'min-h-screen bg-secondary-bg scroll-mt-16',
         'flex flex-col items-center',
       )}
     >
