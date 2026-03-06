@@ -8,6 +8,9 @@ interface SideBarProps {
 }
 
 export default function SideBar({ setIsOpened, isOpened }: SideBarProps) {
+  const handleCloseModal = () => {
+    setIsOpened(!isOpened);
+  };
   return (
     <nav
       className={clsx(
@@ -25,13 +28,7 @@ export default function SideBar({ setIsOpened, isOpened }: SideBarProps) {
           'flex items-center justify-end',
         )}
       >
-        <IconButton
-          icon="X"
-          onClick={() => {
-            setIsOpened(!isOpened);
-          }}
-          size={40}
-        />
+        <IconButton icon="X" onClick={handleCloseModal} size={40} />
       </header>
       <ul
         className={clsx(
@@ -44,6 +41,7 @@ export default function SideBar({ setIsOpened, isOpened }: SideBarProps) {
             <a
               key={link.href}
               href={link.href}
+              onClick={handleCloseModal}
               className="hover:text-text-primary"
             >
               {link.label}
