@@ -1,3 +1,4 @@
+import { contactContent } from '@/domains/contact/contact.content';
 import { profileContent } from '@/domains/profile/profile.content';
 import { Button } from '@/ui/components/Button';
 import { IconLink } from '@/ui/components/IconLink';
@@ -39,13 +40,50 @@ export default function ProfileSection() {
           'md:mt-9 md:flex-row md:gap-5 md:w-auto',
         )}
       >
-        <Button>Ver Projetos</Button>
-        <Button variant="secondary">Contato</Button>
+        <a href="#project" className="inline-block">
+          <Button>Ver Projetos</Button>
+        </a>
+        <a href="#contact" className="inline-block">
+          <Button variant="secondary">Contato</Button>
+        </a>
       </div>
       <div className="flex gap-8 pt-10">
-        <IconLink icon="Github" size={24} href="#" />
-        <IconLink icon="Linkedin" size={24} href="#" />
-        <IconLink icon="Mail" size={24} href="#" />
+        {profileContent.github && (
+          <IconLink
+            icon="Github"
+            size={24}
+            href={profileContent.github}
+            target="_blank"
+            rel="noreferrer noopener"
+          />
+        )}
+        {profileContent.linkedin && (
+          <IconLink
+            icon="Linkedin"
+            size={24}
+            href={profileContent.linkedin}
+            target="_blank"
+            rel="noreferrer noopener"
+          />
+        )}
+        {contactContent.instagram && (
+          <IconLink
+            icon="Instagram"
+            size={24}
+            href={contactContent.instagram}
+            target="_blank"
+            rel="noreferrer noopener"
+          />
+        )}
+        {contactContent.emailLink && (
+          <IconLink
+            icon="Mail"
+            size={24}
+            href={contactContent.emailLink}
+            target="_blank"
+            rel="noreferrer noopener"
+          />
+        )}
       </div>
       <div className="flex pt-6 animate-bounce">
         <IconLink icon="ArrowDown" size={24} href="#about" />

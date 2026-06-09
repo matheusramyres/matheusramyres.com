@@ -8,13 +8,24 @@ interface IconLinkProps {
   size?: number;
   href: string;
   className?: string;
+  target?: string;
+  rel?: string;
 }
 
-export function IconLink({ icon, size, href, className }: IconLinkProps) {
+export function IconLink({
+  icon,
+  size,
+  href,
+  className,
+  target,
+  rel,
+}: IconLinkProps) {
   const IconComponent = Icon[icon];
   return (
     <a
       href={href}
+      target={target}
+      rel={rel}
       className={clsx(
         'cursor-pointer p-2',
         'rounded-full hover:bg-slate-200',
