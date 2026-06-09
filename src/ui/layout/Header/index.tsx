@@ -21,7 +21,13 @@ export default function Header() {
           )}
         >
           <div>
-            <Image width={72} height={28} src="/logo.svg" alt={'logo'} />
+            <Image
+              width={72}
+              height={28}
+              src="/logo.svg"
+              alt={'logo'}
+              className="h-auto w-auto"
+            />
           </div>
 
           <ul
