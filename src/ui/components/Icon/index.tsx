@@ -11,5 +11,5 @@ interface IconProps {
 
 export function Icon({ icon, size, color, className }: IconProps) {
   const IconComponent = Icons[icon];
-  return <IconComponent size={size} color={color} />;
+  return <IconComponent size={size} color={color} className={className} />;
 }

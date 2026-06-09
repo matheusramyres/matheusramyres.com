@@ -6,7 +6,11 @@ import clsx from 'clsx';
 export default function SkillsSection() {
   return (
     <section
-      className={clsx('min-h-screen pt-16 pb-16 flex flex-col items-center')}
+      id="skill"
+      className={clsx(
+        'min-h-screen pt-16 pb-16',
+        'flex flex-col items-center scroll-mt-16',
+      )}
     >
       <HeaderSection
         title={skillContent.title}

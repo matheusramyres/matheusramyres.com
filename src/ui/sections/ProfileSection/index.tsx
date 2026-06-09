@@ -35,7 +35,7 @@ export default function ProfileSection() {
       <div
         className={clsx(
           'mt-4 w-full',
-          'flex flex-col gap-2.5 justify-between',
+          'flex flex-col gap-2.5 justify-between items-center',
           'md:mt-9 md:flex-row md:gap-5 md:w-auto',
         )}
       >

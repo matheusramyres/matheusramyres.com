@@ -24,6 +24,7 @@ export function Button({ children, className, variant, ...rest }: ButtonProps) {
     <button
       className={twMerge(
         clsx(
+          'w-fit',
           'py-2.75 px-7.75',
           'rounded-lg font-medium',
           'cursor-pointer',
