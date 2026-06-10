@@ -34,7 +34,7 @@ export function ProjectCard({
   return (
     <div
       className={clsx(
-        'max-w-102.5 w-full min-h-150',
+        'max-w-102.5 w-full',
         'border border-border-default',
         'bg-white rounded-[14px]',
         'hover:scale-105 transition duration-200 ease-in-out',
@@ -64,7 +64,7 @@ export function ProjectCard({
           />
         </div>
       </motion.div>
-      <div className="p-6">
+      <div className="p-6 border-t border-t-gray-200 flex flex-col min-h-93.5">
         <div className="flex items-center gap-2.5 mb-3.5">
           <p className="text-text-primary font-semibold text-xl">{title}</p>
         </div>
@@ -85,7 +85,7 @@ export function ProjectCard({
             <Badge key={badge + index} text={badge} />
           ))}
         </div>
-        <div className="flex gap-4">
+        <div className="flex gap-4 mt-auto">
           <Button
             variant="secondary"
             className="px-2.5 py-1.5"
