@@ -23,7 +23,7 @@ export const ProjectContent: Skill = {
         'Zod',
         'Resend',
       ],
-      productionUrl: 'https://tailwindcss.com/',
+      productionUrl: 'https://www.ramyres.com/',
       repository: 'https://github.com/matheusramyres/matheusramyres.com',
     },
     {
