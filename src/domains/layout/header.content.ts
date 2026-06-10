@@ -3,8 +3,8 @@ export const headerContent = {
     { label: 'Início', href: '#home' },
     { label: 'Sobre', href: '#about' },
     { label: 'Habilidades', href: '#skill' },
-    { label: 'Projetos', href: '#project' },
     { label: 'Experiência', href: '#experience' },
+    { label: 'Projetos', href: '#project' },
     { label: 'Contato', href: '#contact' },
   ],
 };
