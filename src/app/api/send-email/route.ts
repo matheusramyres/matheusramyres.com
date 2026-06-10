@@ -12,9 +12,7 @@ export async function POST(req: Request) {
     }
 
     const apiKey = process.env.RESEND_API_KEY;
-    const from =
-      process.env.RESEND_FROM ||
-      `no-reply@${process.env.NEXT_PUBLIC_VERCEL_ENV || 'example.com'}`;
+    const from = process.env.RESEND_FROM || 'Portfolio <no-reply@ramyres.com>';
     const to = process.env.CONTACT_RECEIVER_EMAIL || profileContent.email;
 
     if (!apiKey) {
