@@ -27,7 +27,7 @@ export function SkillCard({ title, icon, badges }: SkillCardProps) {
       className={clsx(
         'md:max-w-87 w-full min-h-auto md:min-h-48.75',
         'border border-border-default',
-        'p-6 bg-white rounded-[14px]',
+        'p-6 bg-secondary-bg rounded-[14px]',
         'hover:scale-105 transition duration-200 ease-in-out ',
       )}
     >

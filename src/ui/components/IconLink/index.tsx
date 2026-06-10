@@ -28,7 +28,7 @@ export function IconLink({
       rel={rel}
       className={clsx(
         'cursor-pointer p-2',
-        'rounded-full hover:bg-slate-200',
+        'rounded-full hover:bg-slate-200 dark:hover:bg-slate-200/30',
         className,
       )}
     >

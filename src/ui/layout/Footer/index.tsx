@@ -14,7 +14,12 @@ const navLinks = [
 
 export default function Footer() {
   return (
-    <footer className={clsx('bg-[#07101d] text-white', 'px-5 md:px-16 py-12')}>
+    <footer
+      className={clsx(
+        'bg-[#07101d] dark:bg-background text-white',
+        'px-5 md:px-16 py-12',
+      )}
+    >
       <div className="max-w-6xl mx-auto flex flex-col gap-10 lg:gap-0 lg:flex-row lg:justify-between">
         <div className="lg:max-w-sm">
           <p className="text-2xl font-semibold">{profileContent.name}</p>

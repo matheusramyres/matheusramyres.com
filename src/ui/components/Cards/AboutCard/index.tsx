@@ -14,7 +14,7 @@ export function AboutCard({ icon, title, subText }: AboutCardProps) {
       className={clsx(
         'md:max-w-73.75 w-full min-h-51.5',
         'border border-border-default',
-        'p-6 bg-white rounded-[14px]',
+        'p-6 bg-background rounded-[14px]',
         'hover:scale-105 transition duration-200 ease-in-out ',
       )}
     >

@@ -8,7 +8,8 @@ export default function ExperienceSection() {
     <section
       id="experience"
       className={clsx(
-        'min-h-screen pt-16 pb-16',
+        '-mx-5 md:-mx-16',
+        'min-h-screen pt-16 pb-16 bg-secondary-bg',
         'flex flex-col items-center scroll-mt-16',
       )}
     >

@@ -36,7 +36,7 @@ export function ProjectCard({
       className={clsx(
         'max-w-102.5 w-full',
         'border border-border-default',
-        'bg-white rounded-[14px]',
+        'bg-secondary-bg rounded-[14px]',
         'hover:scale-105 transition duration-200 ease-in-out',
       )}
     >

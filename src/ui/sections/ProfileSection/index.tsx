@@ -10,7 +10,11 @@ export default function ProfileSection() {
   return (
     <section
       id="home"
-      className="min-h-screen bg-white flex flex-col items-center justify-evenly scroll-mt-26.75"
+      className={clsx(
+        'min-h-screen bg-background',
+        'flex flex-col items-center justify-evenly',
+        'scroll-mt-26.75',
+      )}
     >
       <div className="flex flex-col items-center gap-2 md:gap-8 ">
         <div className="min-w-20 min-h-20 md:min-w-30 md:min-h-30 relative">

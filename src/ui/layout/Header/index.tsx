@@ -16,8 +16,8 @@ export default function Header() {
           className={clsx(
             'px-5 sm:px-20 min-h-18',
             'flex items-center justify-between',
-            'bg-white/50 backdrop-blur-sm',
-            'border-b border-slate-200',
+            'bg-white/50 dark:bg-black/50 backdrop-blur-sm',
+            'border-b border-slate-200 dark:border-b-gray-800',
           )}
         >
           <div>
@@ -34,7 +34,7 @@ export default function Header() {
             className={clsx(
               'hidden',
               'md:flex gap-5.5',
-              'text-gray-600 font-semibold',
+              'text-gray-600 dark:text-gray-200 font-semibold',
             )}
           >
             {headerContent.links.map((link) => (

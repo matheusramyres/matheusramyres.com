@@ -9,7 +9,7 @@ export default function ProjectsSection() {
       id="project"
       className={clsx(
         'pt-16 pb-16 px-5 md:px-16 -mx-5 md:-mx-16',
-        'min-h-screen bg-secondary-bg scroll-mt-16',
+        'min-h-screen bg-background scroll-mt-16',
         'flex flex-col items-center',
       )}
     >

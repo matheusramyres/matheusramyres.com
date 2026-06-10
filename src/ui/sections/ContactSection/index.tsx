@@ -4,6 +4,7 @@ import {
   contactFormSchema,
   type ContactFormData,
 } from '@/domains/contact/contact.schema';
+import { Button } from '@/ui/components/Button';
 import { HeaderSection } from '@/ui/components/HeaderSection';
 import { Icon } from '@/ui/components/Icon';
 import { IconLink } from '@/ui/components/IconLink';
@@ -51,7 +52,9 @@ export default function ContactSection() {
   return (
     <section
       className={clsx(
-        'min-h-screen pt-16 pb-16 flex flex-col items-center scroll-mt-16',
+        'min-h-screen pt-16 pb-16 -mx-5 md:-mx-16',
+        'flex flex-col items-center',
+        'scroll-mt-16 bg-secondary-bg',
       )}
       id="contact"
     >
@@ -61,7 +64,7 @@ export default function ContactSection() {
       />
       <div className="mt-12 w-full max-w-6xl px-5 md:px-0 flex flex-col lg:flex-row gap-8 items-start">
         <div className="lg:w-1/2 w-full">
-          <div className="bg-white p-6 rounded-[14px] border border-border-default shadow-sm">
+          <div className="bg-background p-6 rounded-[14px] border border-border-default shadow-sm">
             <h3 className="text-text-primary font-semibold mb-4">
               Envie uma mensagem
             </h3>
@@ -149,13 +152,13 @@ export default function ContactSection() {
               </div>
 
               <div>
-                <button
+                <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-gray-950 text-white py-3 rounded-md font-medium disabled:opacity-50"
+                  className="w-full"
                 >
                   {isSubmitting ? 'Enviando...' : 'Enviar'}
-                </button>
+                </Button>
                 <div className="mt-3">
                   {status === 'success' && (
                     <span className="text-green-600 font-medium">
@@ -190,9 +193,9 @@ export default function ContactSection() {
                 href={contactContent.emailLink}
                 target="_blank"
                 rel="noreferrer noopener"
-                className="flex items-center gap-4 bg-white border border-border-default rounded-md p-4"
+                className="flex items-center gap-4 bg-background border border-border-default rounded-md p-4"
               >
-                <div className="w-12 h-12 rounded-md bg-gray-950 text-white flex items-center justify-center">
+                <div className="w-12 h-12 rounded-md bg-gray-950 dark:bg-gray-500 text-white flex items-center justify-center">
                   <Icon icon="Mail" size={18} color="#fff" />
                 </div>
                 <div>
@@ -207,9 +210,9 @@ export default function ContactSection() {
                 href={contactContent.whatsapp}
                 target="_blank"
                 rel="noreferrer noopener"
-                className="flex items-center gap-4 bg-white border border-border-default rounded-md p-4"
+                className="flex items-center gap-4 bg-background border border-border-default rounded-md p-4"
               >
-                <div className="w-12 h-12 rounded-md bg-gray-950 text-white flex items-center justify-center">
+                <div className="w-12 h-12 rounded-md bg-gray-950 dark:bg-gray-500 text-white flex items-center justify-center">
                   <Icon icon="Phone" size={18} color="#fff" />
                 </div>
                 <div>
@@ -224,9 +227,9 @@ export default function ContactSection() {
                 href={contactContent.location}
                 target="_blank"
                 rel="noreferrer noopener"
-                className="flex items-center gap-4 bg-white border border-border-default rounded-md p-4"
+                className="flex items-center gap-4 bg-background border border-border-default rounded-md p-4"
               >
-                <div className="w-12 h-12 rounded-md bg-gray-950 text-white flex items-center justify-center">
+                <div className="w-12 h-12 rounded-md bg-gray-950 dark:bg-gray-500 text-white flex items-center justify-center">
                   <Icon icon="MapPin" size={18} color="#fff" />
                 </div>
                 <div>
@@ -247,7 +250,7 @@ export default function ContactSection() {
                   href={contactContent.github}
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="bg-gray-100 p-3 rounded-md"
+                  className="bg-gray-100 dark:bg-gray-100/35 p-3 rounded-md"
                 />
               )}
               {contactContent.linkedin && (
@@ -257,7 +260,7 @@ export default function ContactSection() {
                   href={contactContent.linkedin}
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="bg-gray-100 p-3 rounded-md"
+                  className="bg-gray-100 dark:bg-gray-100/35 p-3 rounded-md"
                 />
               )}
               {contactContent.instagram && (
@@ -267,7 +270,7 @@ export default function ContactSection() {
                   href={contactContent.instagram}
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="bg-gray-100 p-3 rounded-md"
+                  className="bg-gray-100 dark:bg-gray-100/35 p-3 rounded-md"
                 />
               )}
             </div>

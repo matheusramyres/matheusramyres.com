@@ -25,7 +25,7 @@ export function ExperienceCard({
       className={clsx(
         'w-full max-w-102.5 self-stretch',
         'border border-border-default',
-        'bg-white rounded-[14px]',
+        'bg-background rounded-[14px]',
         'p-6',
         'shadow-sm',
       )}
