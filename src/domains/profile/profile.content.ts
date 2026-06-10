@@ -2,7 +2,7 @@ import { Profile } from './profile.model';
 
 export const profileContent: Profile = {
   name: 'Matheus Ramyres',
-  email: 'matheus63360@mail.com',
+  email: 'matheus63360@gmail.com',
   role: 'Desenvolvedor Full Stack',
   description:
     'O Desenvolvedor Fullstack que transforma problemas complexos em soluções simples e escaláveis',
